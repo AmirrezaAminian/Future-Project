@@ -1,0 +1,221 @@
+.header {
+    position: relative;
+    // width: 100%;
+    min-height: 100vh;
+    padding: 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(to right bottom, $color-dark-1, $color-dark-2);
+    margin-top: -3rem;
+
+    
+    @media only screen and (max-width:1000px) {
+        flex-direction: column;
+        
+    }
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 30rem;
+        width: 40rem;
+        height: 32rem;
+        background: $color-pink;
+        z-index: 2;
+        transition: 1s;
+        animation: head 1s 1.5s backwards;
+
+        @media only screen and (max-width:1400px) {
+            width: 33rem;
+            height: 30rem;
+            left: 25rem;
+        }
+
+
+        @media only screen and (max-width:$bp-largest) {
+            width: 33rem;
+            height: 30rem;
+            left: 20rem;
+        }
+
+        @media only screen and (max-width:1000px) {
+            width: 27rem;
+            height: 25rem;
+            left: 0rem;
+        }
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 35rem;
+        width: 40rem;
+        height: 32rem;
+        background: $color-green-light;
+        z-index: 1;
+        transition: 1s;
+        animation: head 1s 1.5s backwards;
+
+        @media only screen and (max-width:1400px) {
+            width: 27rem;
+            height: 25rem;
+            right: 25rem;
+        }
+
+        @media only screen and (max-width:$bp-largest) {
+            width: 27rem;
+            height: 25rem;
+            right: 20rem;
+        }
+
+        @media only screen and (max-width:1000px) {
+            width: 27rem;
+            height: 25rem;
+            right: 0rem;
+        }
+    }
+
+
+    &__logo {
+        font-size: 2em;
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.5s;
+        transform-origin: right;
+        top: 8rem;
+        left: 8rem;
+
+        animation: Opacity 1s backwards 1s;
+
+        position: relative;
+        z-index: 10000;
+
+        @media only screen and (max-width:1000px) {
+
+            left: 0rem;
+        }
+
+    }
+
+
+    // &__toggle{
+
+    //     position: absolute;
+    //     width: 5rem;
+    //     height: 5rem;
+    //     background: url('../img/menu.png');
+    //     background-repeat: no-repeat;
+    //     background-position: center;
+    //     top: 8rem;
+    //     right: 8rem;
+    //     cursor: pointer;
+
+
+    // }
+
+
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.5s;
+        transform-origin: right;
+        margin-top: 12rem;
+
+
+
+        &--left {
+
+            width: 50%;
+            animation: MoveToRight 3s backwards 2s;
+            margin-left: 30px;
+
+            h2 {
+                font-size: 4em;
+                line-height: 1em;
+                color: #fff;
+                text-transform: uppercase;
+                font-family: sans-serif;
+
+                @media only screen and (max-width:$bp-largest) {
+                    font-size: 3.5rem;
+                    margin-top: 2rem;
+                }
+            }
+
+            p {
+                font-size: 1em;
+                color: #fff;
+                margin: 3rem 0;
+                font-family: sans-serif;
+                // hyphens: auto;
+                line-height: 1.5em;
+
+            }
+
+
+        }
+
+        &--right {
+            animation: MoveToLeft 3s backwards 2s;
+
+            img {
+                width: 100%;
+
+                @media only screen and (max-width:1400px) {
+                    width: 80%;
+                    transform: translateX(150px);
+
+                }
+
+                @media only screen and (max-width:$bp-largest) {
+                    width: 70%;
+                    transform: translateX(200px);
+                }
+            }
+
+
+
+        }
+    }
+
+
+    &__icons {
+
+
+        color: #fff;
+        font-size: 3rem;
+        cursor: pointer;
+        display: inline-block;
+        animation: Opacity 1s backwards 1s;
+
+        margin-left: 30px;
+
+
+        i {
+            transition: all 0.2s;
+        }
+
+        i:not(:first-child) {
+            margin-left: 3rem;
+        }
+
+
+
+        i:hover {
+            transform: skewX(7deg);
+            transform: scale(1.3);
+        }
+    }
+}

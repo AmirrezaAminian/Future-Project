@@ -1,0 +1,226 @@
+@font-face {
+    font-family:"Lora" ;
+    src: url(../Lora/static/Lora-Regular.ttf);
+}
+
+
+$color-dark-1:#404040 ; 
+$color-dark-2:#151415;
+
+$color-pink:#fa215e;
+$color-green-light:#aeff0f;
+
+$color-purple:#312747;
+$color-grey:#949495;
+
+
+$color-primary:#55c57a;
+$color-primary-light:#7ed56f;
+$color-primary-dark:#28b485;
+
+$color-secondary-light:#ffb900;
+$color-secondary-dark:#ff7730;
+
+$color-tetiary-light:#2998ff;
+$color-tetiary-dark:#5643fa;
+
+$color-grey-light-1:#f7f7f7;
+$color-grey-light-2:#eee;
+
+$color-grey-dark:#777;
+$color-grey-dark-2:#999;
+$color-grey-dark-3:#333;
+
+
+$color-white:#fff;
+$color-black:#000;
+
+$grid-width:114rem;
+$gutter-vertical:8rem;
+$gutter-vertical-small:6rem;
+$gutter-horizontal:6rem;
+
+
+$font-display:"Lora" , sans-serif ;
+
+
+$bp-largest:75em ;     //1200px
+$bp-large:68.75em ;     //1100px
+$bp-medium:56.25em ;     //900px
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width:$bp-largest){
+        font-size: 56.25%;
+    } 
+    @media only screen and (max-width:$bp-large){
+        font-size: 56.25%;
+    }     
+
+       
+}
+
+body{
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+     
+
+
+
+    
+}
+
+ 
+
+
+.section{
+
+       scroll-snap-align: start;
+         
+          
+
+
+
+        &--1{
+            background-image: linear-gradient(to right bottom , $color-dark-1 , $color-dark-2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+
+
+        }
+
+        &--2{
+           background-image:linear-gradient(to right , $color-dark-2 , $color-dark-1) ;
+           min-height: 100vh;
+           display: flex;
+           align-items: center;
+        }
+        &--3{
+            background-image:linear-gradient(to right , $color-dark-2 , $color-dark-1) ;
+           min-height: 100vh;
+           display: flex;
+           align-items: center;
+           color: #fff;
+
+           h4{
+               margin-left: 15rem;
+               letter-spacing: 2px;
+               font-weight: 300;
+           }
+        }
+        &--4{
+            background-color: gray;
+        }
+        &--5{
+            background-color: fuchsia;
+        }
+        &--6{
+            background-color: aqua;
+        }
+        
+
+
+
+    
+}
+
+
+
+@keyframes hamburger {
+    
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(180deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes head {
+    
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+    
+    100%{
+        opacity: 1;
+        height: 32rem;
+    }
+}
+@keyframes MoveToRight {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(-100rem);
+    }
+
+    80%{
+        opacity: .5;
+        transform: translateX(10rem);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+
+}
+@keyframes MoveToLeft {
+    
+    0%{
+        opacity: 0;
+        transform: translateX(100rem);
+    }
+
+    80%{
+        opacity: .5;
+        transform: translateX(-10rem);
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+
+}
+@keyframes Opacity {
+    
+    0%{
+        opacity: 0;
+         
+    }
+
+    80%{
+        opacity: .5;
+         
+    }
+    
+    100%{
+        opacity: 1;
+    }
+
+}

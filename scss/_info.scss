@@ -1,0 +1,64 @@
+.info{
+    width: 70%;
+    margin: 0 auto;
+      
+    padding: 6rem;
+    box-shadow: 0 2rem 4rem rgba($color: #000000, $alpha: 0.1);
+    color: #eee;
+    
+
+    &__text{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 4.2rem;
+        padding: 10rem 0;
+        font-weight: 200;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+    span{
+        position: relative;
+
+        &::before{
+            position: absolute;
+            content: '';
+            width: 103%;
+            height: 12px;
+            left: 0;
+            bottom: 5px;
+            background-color: rgba(#ddd , 0.2);
+        }
+    }
+    }
+
+
+    &__icon{
+        text-align: right;
+        margin-right: 10rem;
+        margin-bottom: 3rem;
+        font-size: 7rem;
+        cursor: pointer;
+
+        span{
+
+            &:first-of-type{
+                color: rgba(#ddd , 0.2);
+            }
+        }
+
+         
+    }
+    &__gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit , minmax(20rem , 1fr));
+        // margin-top: 10rem;
+
+    }
+
+
+    &__img{
+        width: 100%;
+        height: 80%;
+    }
+}
