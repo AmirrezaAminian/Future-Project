@@ -8,6 +8,22 @@
     min-height: 100vh;
 
 
+    @media only screen and (max-width:800px) {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h4{
+        
+        @media only screen and (max-width:800px) {
+                     
+           display: inline-block;
+           
+            transform: translate(-4rem , 8rem);
+        }
+    }
+
     &__content{
         display: flex;
         // box-shadow: 0 3rem 4rem rgba(#000 , 0.5);
@@ -16,6 +32,12 @@
         padding: 10rem;
         align-items: center;
         position: relative;
+
+        @media only screen and (max-width:800px) {
+               flex-direction: column;
+               text-align: center;
+               justify-content: center;
+        }
 
         &::after{
             position: absolute;
@@ -44,6 +66,11 @@
             padding-left: 24rem;
             font-size: 2rem;
             font-weight: 300;
+
+            @media only screen and (max-width:800px) {
+               padding-left: 0;
+               padding-top: 5px;
+        }
         }
     }
 

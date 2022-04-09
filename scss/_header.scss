@@ -48,6 +48,11 @@
             height: 25rem;
             left: 0rem;
         }
+        @media only screen and (max-width:800px) {
+            width: 20rem;
+            height: 20rem;
+            left: 0rem;
+        }
 
     }
 
@@ -80,6 +85,11 @@
             height: 25rem;
             right: 0rem;
         }
+         @media only screen and (max-width:800px) {
+            width: 20rem;
+            height: 20rem;
+            right: 0rem;
+        }
     }
 
 
@@ -92,7 +102,7 @@
         transition: all 0.5s;
         transform-origin: right;
         top: 8rem;
-        left: 5rem;
+        left: 1rem;
         z-index: 2;
 
         animation: Opacity 1s backwards 1s;
@@ -151,6 +161,15 @@
 
             }
 
+              @media only screen and (max-width:800px) {
+                // flex-direction: column;
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+                margin-top: -6rem;
+
+            }
+
             h2 {
                 font-size: 4em;
                 line-height: 1em;
@@ -168,6 +187,13 @@
                     margin-top: 0;
 
                 }
+
+                @media only screen and (max-width:800px) {
+                    font-size: 3.3rem;
+                    line-height: 1.1;
+                }
+
+                  
             }
 
             p {
@@ -179,8 +205,16 @@
                 line-height: 1.5em;
 
                 @media only screen and (max-width:900px) {
-                    font-size: 0.8em;
+                    font-size: 1em;
                 }
+
+                @media only screen and (max-width:900px) {
+                    font-size: 1.2em;
+                    margin: 1rem 0;
+                    font-weight:100 ;
+                        
+                }
+
 
             }
 
@@ -219,6 +253,12 @@
             @media only screen and (max-width:1000px) {
                 // flex-direction: column;
                 width: 100%;
+
+            }
+
+              @media only screen and (max-width:800px) {
+                // flex-direction: column;
+                display: none;
 
             }
 

@@ -391,6 +391,14 @@ body {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .header::before {
+    width: 20rem;
+    height: 20rem;
+    left: 0rem;
+  }
+}
+
 .header::after {
   content: '';
   position: absolute;
@@ -428,6 +436,14 @@ body {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .header::after {
+    width: 20rem;
+    height: 20rem;
+    right: 0rem;
+  }
+}
+
 .header__logo {
   font-size: 2em;
   position: absolute;
@@ -437,7 +453,7 @@ body {
   transition: all 0.5s;
   transform-origin: right;
   top: 8rem;
-  left: 5rem;
+  left: 1rem;
   z-index: 2;
   animation: Opacity 1s backwards 1s;
   position: relative;
@@ -474,6 +490,15 @@ body {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .header__content--left {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    margin-top: -6rem;
+  }
+}
+
 .header__content--left h2 {
   font-size: 4em;
   line-height: 1em;
@@ -496,6 +521,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  .header__content--left h2 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+  }
+}
+
 .header__content--left p {
   font-size: 1em;
   color: #fff;
@@ -506,7 +538,15 @@ body {
 
 @media only screen and (max-width: 900px) {
   .header__content--left p {
-    font-size: 0.8em;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header__content--left p {
+    font-size: 1.2em;
+    margin: 1rem 0;
+    font-weight: 100;
   }
 }
 
@@ -541,6 +581,12 @@ body {
 @media only screen and (max-width: 1000px) {
   .header__content--right {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header__content--right {
+    display: none;
   }
 }
 
@@ -685,6 +731,12 @@ body {
   list-style: none;
   text-align: center;
   transform: scale(0.9);
+}
+
+@media only screen and (max-width: 1400px) {
+  .navigation__list {
+    transform: scale(0.75);
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1138,6 +1190,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media only screen and (max-width: 800px) {
+  .info__text {
+    font-size: 3.5rem;
+  }
+}
+
 .info__text span {
   position: relative;
 }
@@ -1182,6 +1240,21 @@ body {
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 800px) {
+  .process {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .process h4 {
+    display: inline-block;
+    transform: translate(-4rem, 8rem);
+  }
+}
+
 .process__content {
   display: flex;
   width: 80%;
@@ -1189,6 +1262,14 @@ body {
   padding: 10rem;
   align-items: center;
   position: relative;
+}
+
+@media only screen and (max-width: 800px) {
+  .process__content {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
 }
 
 .process__content::after {
@@ -1217,6 +1298,13 @@ body {
   padding-left: 24rem;
   font-size: 2rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 800px) {
+  .process__content p {
+    padding-left: 0;
+    padding-top: 5px;
+  }
 }
 
 .process__video {
